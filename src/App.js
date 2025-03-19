@@ -20,8 +20,10 @@ function App() {
       <nav className="nav">
         <div className="nav-container">
           <Link to="/" className="logo">
-            שם האתר
-          </Link>
+            
+          Warm light
+            
+                      </Link>
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </div>

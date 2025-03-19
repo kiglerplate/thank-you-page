@@ -3,10 +3,10 @@ import React from "react";
 function HomePage() {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>ברוכים הבאים לאתר שלנו!</h1>
+      <h1 style={styles.title}>ברוכים הבאים Warm light !</h1>
       <p style={styles.description}>
         כאן תוכלו למצוא את כל המידע והשירותים שאתם צריכים. אנחנו כאן כדי לעזור
-        לכם.
+        לכם
       </p>
       <div style={styles.buttons}>
         <a href="/contact" style={styles.button}>
@@ -15,6 +15,30 @@ function HomePage() {
         <a href="/terms-of-service" style={styles.button}>
           תנאי שימוש
         </a>
+      </div>
+
+      {/* הוספת סעיף שירותים */}
+      <div style={styles.servicesSection}>
+        <h2 style={styles.servicesTitle}>השירותים שלנו</h2>
+        <div style={styles.servicesGrid}>
+          <div style={styles.serviceCard}>
+            <h3 style={styles.serviceTitle}>שירות 1</h3>
+            <p style={styles.serviceDescription}>
+אוטומצייה שליחת הודעה לאחר רכישה
+            </p>
+          </div>
+          <div style={styles.serviceCard}>
+            <h3 style={styles.serviceTitle}>שירות 2</h3>
+            <p style={styles.serviceDescription}>
+            אוטומצייה שליחת הודעה  נטישת עגלה
+            </p>
+          </div>
+          <div style={styles.serviceCard}>
+            <h3 style={styles.serviceTitle}>שירות 3</h3>
+            <p style={styles.serviceDescription}>
+ועוד המון מגוון של אוטומציות            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -60,6 +84,40 @@ const styles = {
   },
   buttonHover: {
     backgroundColor: "#0056b3",
+  },
+  servicesSection: {
+    marginTop: "60px",
+    width: "100%",
+    maxWidth: "1200px",
+  },
+  servicesTitle: {
+    fontSize: "2rem",
+    color: "#333",
+    marginBottom: "40px",
+    fontWeight: "600",
+  },
+  servicesGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "20px",
+  },
+  serviceCard: {
+    backgroundColor: "#fff",
+    padding: "20px",
+    borderRadius: "8px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    textAlign: "center",
+  },
+  serviceTitle: {
+    fontSize: "1.5rem",
+    color: "#007bff",
+    marginBottom: "15px",
+    fontWeight: "600",
+  },
+  serviceDescription: {
+    fontSize: "1rem",
+    color: "#555",
+    lineHeight: "1.6",
   },
 };
 
