@@ -9,11 +9,13 @@ function HomePage() {
         לכם
       </p>
       <div style={styles.buttons}>
-        <a href="/contact" style={styles.button}>
-          צור קשר
-        </a>
-        <a href="/terms-of-service" style={styles.button}>
-          תנאי שימוש
+        <a
+          href="https://manage.wix.com/dashboard/e7b7dc50-1581-49cd-b2e2-9c69c9b791f5/app-market/8c79b733-63bc-425c-8855-d925d8dbb6c6/overview?appMarketParams=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoie1wiYXBwRGVmSWRcIjpcIjhjNzliNzMzLTYzYmMtNDI1Yy04ODU1LWQ5MjVkOGRiYjZjNlwiLFwic2hvdWxkRWRpdG9ySW5zdGFsbFwiOmZhbHNlLFwicm91dGVcIjpcInRlc3RBcHBcIixcInZlcnNpb25cIjpcImxhdGVzdFwifSIsImlhdCI6MTc0MjI0MzM3Mn0.ULlMt_EV6dyV1qelGryk9X_zuQCk61c-EnQj79onjYg"
+          style={styles.button}
+          target="_blank" // כדי לפתוח את הקישור בלשונית חדשה
+          rel="noopener noreferrer" // מומלץ להוסיף מסיבות אבטחה
+        >
+           כניסה לאפליקצייה WIX
         </a>
       </div>
 
@@ -72,16 +74,16 @@ const styles = {
     display: "flex",
     gap: "20px",
   },
-  button: {
-    padding: "12px 24px",
-    fontSize: "1rem",
-    backgroundColor: "#007bff",
-    color: "#fff",
-    border: "none",
-    borderRadius: "8px",
-    textDecoration: "none",
-    transition: "background-color 0.3s ease",
-  },
+  // button: {
+  //   padding: "12px 24px",
+  //   fontSize: "1rem",
+  //   backgroundColor: "#007bff",
+  //   color: "#fff",
+  //   border: "none",
+  //   borderRadius: "8px",
+  //   textDecoration: "none",
+  //   transition: "background-color 0.3s ease",
+  // },
   buttonHover: {
     backgroundColor: "#0056b3",
   },
@@ -118,6 +120,25 @@ const styles = {
     fontSize: "1rem",
     color: "#555",
     lineHeight: "1.6",
+  },
+  button: {
+    padding: "15px 30px", // גודל הכפתור
+    fontSize: "1.2rem",
+    backgroundColor: "#007bff", // צבע הכפתור
+    color: "#fff",
+    border: "none",
+    borderRadius: "8px", // פינות מעוגלות
+    textDecoration: "none",
+    transition: "background-color 0.3s ease",
+    width: "200px", // רוחב הכפתור
+    height: "60px", // גובה הכפתור
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // צל קטן לכפתור
+  },
+  buttonHover: {
+    backgroundColor: "#0056b3", // צבע רקע בעת hover
   },
 };
 
