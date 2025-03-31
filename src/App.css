@@ -1,6 +1,6 @@
 /* סגנונות כלליים */
 .nav {
-  background-color: #007bff;
+  background-color: #0b1f33;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -59,7 +59,7 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #007bff;
+    background-color: 0 4px 6px rgba(0,0,0,0.1) ;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@
   }
 }/* סגנונות כלליים */
 .nav {
-  background-color: #007bff;
+  background-color: 0 4px 6px rgba(0,0,0,0.1);
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -142,7 +142,7 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #0b1f33;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -164,4 +164,21 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.mobile-only-image {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .mobile-only-image {
+    display: none;
+  }
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  object-fit: cover;
 }
